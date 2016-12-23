@@ -327,7 +327,7 @@ section.success {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
-
+/* making this different */
 #about img {
   float: left;
   clear: left;
