@@ -73,15 +73,10 @@ header {
   height: 850px;
 }
 header .svg {
+width:100%;
+height: 100%;
+}
 
-}
-header .arrow {
-  position: absolute;
-  text-align: center;
-  bottom: 5px;
-  width: 100%;
-  height: 50px;
-}
 header #header-image {
   width: 100%;
   height: 100%;
@@ -107,22 +102,37 @@ header #header-image {
     font-size: 1.75em;
   }
 }
+.arrow {
+  margin-top: -20px;
+
+}
+#downarrow {
+    height: 0px;
+    margin: 0;
+    padding: 0;
+}
 .logo {
   vertical-align: center;
-  width: 50%;
-  height: 50%;
+  height: 550px;
 
-    -webkit-filter: drop-shadow( -2px -2px 2px #622A47 );
-            filter: drop-shadow( -2px -2px 2px #622A47 );
+  -webkit-filter: drop-shadow( -2px -2px 2px #622A47 );
+  filter: drop-shadow( -2px -2px 2px #622A47 );
 }
 
+#mainlogo {
+  vertical-align: center;
+  height: 550px;
+
+  -webkit-filter: drop-shadow( -2px -2px 2px #622A47 );
+  filter: drop-shadow( -2px -2px 2px #622A47 );
+}
 .navbar-custom {
-  background: transparent;
+  background: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 .navbar-custom a:focus {
   outline: none;
@@ -141,25 +151,26 @@ header #header-image {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  color: rgb(227, 186, 226);
 }
 .navbar-custom .navbar-nav li a:hover {
-  /*color: rgb(98, 42, 71);*/
+  color: rgb(98, 42, 71);
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
+  background: rgb(227, 186, 226);
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  /*background: rgb(98, 42, 71);*/
+  background: rgb(98, 42, 71);
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  /*background: rgb(98, 42, 71);*/
+  background: rgb(98, 42, 71);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -169,9 +180,9 @@ header #header-image {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  /*background-color: rgb(98, 42, 71);*/
-  color: white;
-  /*border-color: rgb(98, 42, 71);*/
+  background-color: rgb(98, 42, 71);
+  color: rgb(98, 42, 71);
+  border-color: rgb(98, 42, 71);
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -192,6 +203,11 @@ header #header-image {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+}
+
+#navlogo {
+  display: none;
+  /*opacity: 0;*/
 }
 section {
   padding: 100px 0;
@@ -214,6 +230,40 @@ section.success {
   section.first {
     padding-top: 75px;
   }
+}
+
+#promotion1 {
+  background: url('../img/cucumbermelon.jpg') no-repeat top center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#promotion2 {
+  background: url('../img/peppermintcandy.jpg') no-repeat top center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#promotion3 {
+  background: url('../img/whitechristmas.jpg') no-repeat top center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.promotionrow {
+  height: 600px;
 }
 #seasonalsoap .portfolio-item,
 #soap .portfolio-item  {
@@ -328,6 +378,9 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 /* making this different */
+#about {
+  /*min-height: 100vh;*/
+}
 #about img {
   float: left;
   clear: left;
@@ -548,3 +601,38 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+/* SVG */
+.s1 {
+  fill:#fff;
+}
+.s2 {
+  fill:#fff;
+}
+.s3 {
+  fill:#fff;
+}
+
+/* NAV SVG*/
+.n1 {
+  fill:rgb(98, 42, 71);
+}
+.n2 {
+  fill:rgb(98, 42, 71);
+}
+.n3 {
+  fill:rgb(98, 42, 71);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

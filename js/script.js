@@ -26,9 +26,19 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 780
         }
     })
+    
+
+    $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y > 760) {
+        $('#navlogo').fadeIn();
+      } else {
+        $('#navlogo').fadeOut();
+      }
+    });
 
     // Floating label headings for the contact form
     $(function() {
