@@ -70,7 +70,7 @@ hr.star-primary:after {
 header {
   text-align: center;
   /*background: rgb(98, 42, 71);*/
-  height: 850px;
+  height: 95vh;
 }
 header .svg {
 width:100%;
@@ -121,7 +121,7 @@ header #header-image {
 
 #mainlogo {
   vertical-align: center;
-  height: 550px;
+  height: 60vh;
 
   -webkit-filter: drop-shadow( -2px -2px 2px #622A47 );
   filter: drop-shadow( -2px -2px 2px #622A47 );
