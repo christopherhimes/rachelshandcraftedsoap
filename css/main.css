@@ -70,29 +70,30 @@ hr.star-primary:after {
 header {
   text-align: center;
   /*background: rgb(98, 42, 71);*/
-  background:url('../img/example.jpg') top center;
+  height: 850px;
+}
+header .svg {
+
+}
+header .arrow {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+  height: 50px;
+}
+header #header-image {
+  width: 100%;
+  height: 100%;
+
+
+  background:url('../img/soaphero.jpg') no-repeat top center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
-  color: white;
-  height: 600px;
-}
-header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-header img {
-  display: block;
-  margin: 0 auto 20px;
-}
-header .intro-text .name {
-  display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
-}
-header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
 }
 @media (min-width: 768px) {
   header .container {
@@ -106,6 +107,15 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+.logo {
+  vertical-align: center;
+  width: 50%;
+  height: 50%;
+
+    -webkit-filter: drop-shadow( -2px -2px 2px #622A47 );
+            filter: drop-shadow( -2px -2px 2px #622A47 );
+}
+
 .navbar-custom {
   background: transparent;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -187,7 +197,7 @@ section {
   padding: 100px 0;
 }
 section h2 {
-  margin: 0;
+  margin: 20px 0;
   font-size: 3em;
 }
 section.success {
@@ -205,17 +215,20 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
+#seasonalsoap .portfolio-item,
+#soap .portfolio-item  {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#seasonalsoap .portfolio-item .portfolio-link,
+#soap .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#seasonalsoap .portfolio-item .portfolio-link .caption,
+#soap .portfolio-item .portfolio-link .caption {
   background: rgba(227, 186, 226, 0.9);
   position: absolute;
   width: 100%;
@@ -225,10 +238,18 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#seasonalsoap .portfolio-item .portfolio-link .caption {
+  background: rgba(98, 42, 71, 0.9);
+}
+#soap .portfolio-item .portfolio-link .caption {
+  background: rgba(227, 186, 226, 0.9);
+}
+#seasonalsoap .portfolio-item .portfolio-link .caption:hover,
+#soap .portfolio-item .portfolio-link .caption:hover  {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#seasonalsoap .portfolio-item .portfolio-link .caption .caption-content,
+#soap .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -238,18 +259,22 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#seasonalsoap .portfolio-item .portfolio-link .caption .caption-content i,
+#soap .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#seasonalsoap .portfolio-item .portfolio-link .caption .caption-content h3,
+#seasonalsoap .portfolio-item .portfolio-link .caption .caption-content h4, 
+#soap .portfolio-item .portfolio-link .caption .caption-content h3,
+#soap .portfolio-item .portfolio-link .caption .caption-content h4{
   margin: 0;
 }
-#portfolio * {
+#seasonalsoap *, #soap * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  #seasonalsoap .portfolio-item,
+  #soap .portfolio-item {
     margin: 0 0 30px;
   }
 }
@@ -302,6 +327,15 @@ section.success {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
+
+#about img {
+  float: left;
+  clear: left;
+  padding: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 footer {
   color: white;
 }
@@ -392,8 +426,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
-  border-color: #11866f;
+  background-color: rgb(227, 186, 226);
+  border-color: rgb(227, 186, 226);
 }
 .btn-success:active,
 .btn-success.active,
